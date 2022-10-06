@@ -1,4 +1,4 @@
-package basic1;
+package week2_ex1;
 
 public class Account 
 {
