@@ -24,5 +24,6 @@ public class AccountTest
         System.out.println("name "+a1.getName()+"  balance "+a1.getBalance());
         System.out.println("name "+a2.getName()+"  balance "+a2.getBalance());
 
+        input.close();
     }    
 }

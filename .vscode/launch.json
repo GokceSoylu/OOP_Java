@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch cunstructer",
+            "request": "launch",
+            "mainClass": "cunstructer",
+            "projectName": "OOP_examples_65981d46"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Try",
+            "request": "launch",
+            "mainClass": "Try",
+            "projectName": "OOP_examples_65981d46"
+        },
+        {
+            "type": "java",
+            "name": "Launch constructer2",
+            "request": "launch",
+            "mainClass": "constructer2",
+            "projectName": "OOP_examples_65981d46"
+        },
+        {
+            "type": "java",
+            "name": "Launch refaranceObje",
+            "request": "launch",
+            "mainClass": "refaranceObje",
+            "projectName": "OOP_examples_65981d46"
+        },
+        {
+            "type": "java",
+            "name": "Launch trying",
+            "request": "launch",
+            "mainClass": "trying",
+            "projectName": "OOP_examples_65981d46"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountTest",
+            "request": "launch",
+            "mainClass": "week2_ex1.AccountTest",
+            "projectName": "OOP_examples_65981d46"
+        }
+    ]
+}

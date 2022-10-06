@@ -1,8 +1,7 @@
 public class cunstructer 
 {
     public static void main(String[] Soylu)
-    {
-        Student s1=new Student();  
+    { 
         Student s2=new Student("hasan",23,1);
         Student s3;// şimdi burada gördüğün gibi nestede götergeci oluşturduk ancak dah  boş
         //! s3.age=89;// bu yüzden burada hata alırız boşluğu gösteriyor bellketerki her hangi bir yeri göstermiyor.
@@ -11,6 +10,7 @@ public class cunstructer
         System.out.println(s2.name);
  }
 }
+
 class Student
 {
     int number, age;
