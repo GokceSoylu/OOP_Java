@@ -55,6 +55,6 @@ class Kedi
  * this()kullanımı
  * tekrar tekrar atamakatan kurtukmak için diğer kurucuyu çağırmma amaçlı
  * default değer vermek için
- * diğer kurucu onemli bir işlem yapılıyorsa bunun yapıkmasını sağlama:)
- * kısaca this'in zaten bu obje demek olduğunu biliyoruz this() deyince de bu obje için kurux-cuyu çalıştırıryor :))
+ * diğer kurucu onemli bir işlem yapılıyorsa bunun yapılmasını sağlama:)
+ * kısaca this'in zaten bu obje demek olduğunu biliyoruz this() deyince de bu obje için kurucuyu çalıştırıryor :))
  */

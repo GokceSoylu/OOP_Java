@@ -6,7 +6,7 @@ public class cunstructer
         Student s2=new Student("hasan",23,1);
         Student s3;// şimdi burada gördüğün gibi nestede götergeci oluşturduk ancak dah  boş
         //! s3.age=89;// bu yüzden burada hata alırız boşluğu gösteriyor bellketerki her hangi bir yeri göstermiyor.
-        s3=new Student();
+        s3=new Student();// bellekten nesne iöçin yer aldık ve göstericiye atadık
         s3.age=89;//su an sorun yok :))
         System.out.println(s2.name);
  }
