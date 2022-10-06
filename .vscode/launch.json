@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AccountTest",
+            "request": "launch",
+            "mainClass": "week2_ex2.AccountTest",
+            "projectName": "OOP_examples_65981d46"
+        },
+        {
+            "type": "java",
             "name": "Launch cunstructer",
             "request": "launch",
             "mainClass": "cunstructer",
