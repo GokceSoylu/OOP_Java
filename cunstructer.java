@@ -2,13 +2,13 @@ public class cunstructer
 {
     public static void main(String[] Soylu)
     { 
-        
-        Student s2=new Student("hasan",23,1);
+        //Student s2=new Student("hasan",23,1);
         Student s3;// şimdi burada gördüğün gibi nestede götergeci oluşturduk ancak dah  boş
         //! s3.age=89;// bu yüzden burada hata alırız boşluğu gösteriyor bellketerki her hangi bir yeri göstermiyor.
         s3=new Student();// bellekten nesne iöçin yer aldık ve göstericiye atadık
-        s3.age=89;//su an sorun yok :))
-        System.out.println(s2.name);
+        //s3.age=89;//su an sorun yok :))
+        //int a=s3.age;
+        //System.out.println(a);
  }
 }
 
@@ -17,18 +17,18 @@ class Student
     int number, age;
     String name;
 
-    Student()
+    /*Student()
     {
         System.out.println("paremetresiz kurucu calisti");
     }
     Student(String name, int age, int number)
     {
-        System.out.println("parametreli kurucu calişti");
+        System.out.println("parametreli kurucu calisti");
         this.name=name;
         this.age=age;
         this.number=number;
     }
-    
+*/
 }
 
 
