@@ -38,4 +38,7 @@ o zaman her hata ihtimaline ayrı try'lar açabiliriz. Bunun yanı sıra madem b
 çünkü hatanın ne olduğunu bilmiyoruz bu hataysa boyle yap bu hataysa boyle yap diye belirtiyoruz:)) 
 hop🙋🏻‍♀️ peki genel exception neden var? hatyı tahmin ettiklerimiz arasından çıkmıyor ama program bitmesin yakalayalım diye belki getMessage() ile
 hatayı yazdırıp öğrenebiliriz. yada kodun durumuna göre başka şeyler yazılır:))
+
+--> hop bir ek bilgi daha  catch kısımlarına bakarsan IndexOutOfBoundsException ArithmeticException her biri birer exception bunların arasında
+bir inheritance var exceptiontion dediğimiz ise en alttaki yani hepsini kapsan oluyor :))
 */
