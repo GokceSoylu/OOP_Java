@@ -1,4 +1,4 @@
-package week2_ex2;
+package week3_ex2;
 import java.util.*;
 
 public class AccountTest 
