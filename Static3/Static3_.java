@@ -14,9 +14,9 @@ public class Static3_
         counter++;
     }
 
-    void set_year(int year)
+    static void set_year(int y)
     {
-        this.year=year;
+        year=y;
     }
     void reset_counter()
     {
