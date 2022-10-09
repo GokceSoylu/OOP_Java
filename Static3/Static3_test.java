@@ -12,7 +12,7 @@ public class Static3_test
         s1.get_info();
         s2.get_info();
 
-        s1.set_year(2000);
+        Static3_.set_year(2000);
         s1.reset_counter();
         
         s1.get_info();
@@ -23,5 +23,5 @@ public class Static3_test
 }
 /*
  * görüldüğü üzere static değer sonradan fonksiyonlarlada değiştirilebiliyor. bumu const gibi düşünmeyelim yaşayan değiştirilebilen 
- * bir şeydir static sadece hafızada tek bir yerde dururu bu yüzden değişikliğinden tüm objeler etkilenir. Çünkü o birtane :))
+ * bir şeydir static sadece hafızada tek bir yerde dururu bu yüzden değişikliğinden tüm objeler etkilenir. Çünkü o birtane :
  */
