@@ -36,3 +36,6 @@ public class Time1
         return String.format("%d : %d : %d %s",(hour==12 || hour==0) ? 12:hour%12,minute,second,(hour<12) ? "AM": "PM");
     }
 }
+//mesela buraya try-catch ekeleyelim desek olmasz. Çünkü try catch hata olan yerde kullanılır. normalde kodun çalışmayacağı bir hata vardır
+//kodun durmasını engellemek amaçlı kullanılır. Ne yapabilirdik hata olabilecek yere koyabiliriz.
+// hadi yapalım :)) 
