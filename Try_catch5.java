@@ -1,6 +1,6 @@
 
 
-public class Week4_ex3 
+public class Try_catch5 
 {
     public void m()
     {
@@ -18,7 +18,7 @@ public class Week4_ex3
     }
     public static void main(String[] Soylu)
     {
-        Week4_ex3 obj=new Week4_ex3();
+        Try_catch5 obj=new Try_catch5();
         try
         {
             obj.p();

@@ -1,8 +1,8 @@
-public class try_catch2 
+public class Try_catch2 
 {
     public static void main(String [] Soylu)
     {
-        int a[]=new int[10],b,c;
+        int a[]=new int[10], b, c;
         try
         {
             b=a[13];

@@ -1,4 +1,4 @@
-package week4_ex1;
+package Try_catch3;
 import java.util.*;
 public class Time1_test 
 {

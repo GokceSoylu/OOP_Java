@@ -1,6 +1,6 @@
 
 
-public class Week4_ex2 
+public class Try_catch4 
 {
     public void m()
     {
@@ -23,7 +23,7 @@ public class Week4_ex2
     }
     public static void main(String[] Soylu)
     {
-        Week4_ex2 obj=new Week4_ex2();
+        Try_catch4 obj=new Try_catch4();
         obj.p();
         System.out.println("normal flow ");
     }

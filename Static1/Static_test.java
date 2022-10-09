@@ -1,4 +1,4 @@
-package Week4_ex5;
+package Static1;
 
 public class Static_test 
 {

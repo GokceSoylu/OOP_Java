@@ -1,4 +1,4 @@
-package Week4_ex6;
+package Static2;
 
 public class Static2_ 
 {

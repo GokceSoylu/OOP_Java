@@ -1,4 +1,4 @@
-package week3_ex1;
+package Creat_obje2;
 import java.util.Scanner;
 public class AccountTest 
 {

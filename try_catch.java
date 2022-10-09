@@ -10,7 +10,7 @@ public class try_catch
     }    
 }
 */
-public class try_catch 
+public class Try_catch 
 {
     public static void main(String[] Soylu)
     {

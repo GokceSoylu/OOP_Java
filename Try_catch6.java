@@ -1,6 +1,6 @@
-package Week4_ex4;
+
 import java.util.*;
-public class Week4_ex4 
+public class Try_catch6 
 {
     public static void main(String[] Soyulu)
     {

@@ -1,6 +1,6 @@
-package Week4_ex6;
+package Static2;
 
-public class Stati2_test 
+public class Static2_test 
 {
     public static void main(String[] Soylu)
     {

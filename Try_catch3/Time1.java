@@ -1,4 +1,4 @@
-package week4_ex1;
+package Try_catch3;
 public class Time1
 {
     private int hour, minute, second;
