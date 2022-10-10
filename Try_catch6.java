@@ -9,7 +9,9 @@ public class Try_catch6
         {
             int n=in.nextInt();
             if(n>100)
-                throw new Exception("out of bond");
+                throw new Exception("out of bond");//thow at demek exception hata atıyruz bunu içinde new kullanarak Exception kurucuusnu çagiriyoruz 
+                //bunu iöüçine mesaj yazaraska String'li kurucuyu çağırıp bir mesaja atamiş oluruz boş çalıştırıpp mesajsız da oluşturabilirz. anladıkmı mevzuyu. 
+                //Exception bir sınıf biz bu sunuftan birr exception oluşturup atıyoe-ruz :)) neden boyle bir şey yaptık çünkü normlade hata olmayan bir yerde biz hata oluşturmak istiyoruz :))    
         }
         catch(InputMismatchException e)
         {
