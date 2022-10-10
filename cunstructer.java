@@ -11,7 +11,6 @@ public class cunstructer
         //System.out.println(a);
  }
 }
-
 class Student
 {
     int number, age;
