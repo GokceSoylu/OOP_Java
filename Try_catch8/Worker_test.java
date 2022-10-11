@@ -19,5 +19,7 @@ public class Worker_test
 
         Worker w5=new Worker("muaz",-90);
         w5.print();
+
+        System.out.println(Worker.getCounter());
     }    
 }

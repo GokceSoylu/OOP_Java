@@ -51,7 +51,7 @@ public class Worker
     {
         System.out.println(name+"  "+salary);
     }
-    public int getCounter()
+    public static int getCounter()
     {
         return counter;
     }
