@@ -17,7 +17,9 @@ public class StaticMethod0
     }
 }
 //Static varible'in ne olduğunu biliyoruz.
-//-her obje bellekte yaşayan ayrı hücreler gibiydi bizde her biri için aynı olan vb durunlar için
+//her obje bellekte yaşayan ayrı hücreler gibiydi bizde her biri için aynı olan vb durunlar için
 //bellekte tek bir yer kaplayacak tek bir olan tüm objelerin kullanacaği bir varaible yapalım dedeik. Bize bunu sağlayan static keyword oluyor
 //varaible durum buydu metodda da aynı mantık var. her obje için ayrı ayrı olmayan tüm objelerin kullancağı, nesne olmadan çağırılabilecek metodlar
 //oluşturmak isteğimizde static keyword'ü kullanıyoruz. 
+
+//static metodun sadece static varibles'a ulaşabildiğni unutmayalım ornek-> StaticMethod2.java
