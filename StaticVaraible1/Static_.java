@@ -1,4 +1,4 @@
-package Static1;
+package StaticVaraible1araible1;
 // Nedir bu static? Normalde biz obje oluşturduğumuzda class bellekte bulunnan bir yapı değil ancak her obje
 //bellekte ayrı ayrı yaşayan yapılar olarak düşünşebilir demiştik. yani her obje bellekte atyrı ayrı yer kaplar. 
 //şimdi biz tüm objeler için aynı olacak bir değerde ne diye bellekte ayrı ayrı yer kaplıyalım diyoruz. 

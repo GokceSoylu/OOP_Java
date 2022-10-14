@@ -1,4 +1,4 @@
-public class Static4 
+public class StaticMethod3 
 {
     int n;
     static int m;

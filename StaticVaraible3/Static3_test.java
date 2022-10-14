@@ -1,4 +1,4 @@
-package Static3;
+package StaticVaraible3;
 
 public class Static3_test 
 {

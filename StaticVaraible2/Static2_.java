@@ -1,4 +1,4 @@
-package Static2;
+package StaticVaraible2;
 
 public class Static2_ 
 {

@@ -1,4 +1,4 @@
-package Static3;
+package StaticVaraible3;
 //stattiiği hiç iitialize etnmsen iste counter olaark kullanalım falan. fonklar içinde değiştirebiliyor muyuz? birde interneteen bakalaım
 public class Static3_ 
 {
