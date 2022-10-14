@@ -1,4 +1,4 @@
-package StaticVaraible1araible1;
+package StaticVaraible1;
 
 public class Static_test 
 {
