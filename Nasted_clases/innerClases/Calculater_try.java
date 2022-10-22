@@ -1,3 +1,4 @@
+//todo özet kimse kimsenin metodunada değişkenşnede ulaşamaz!🤷🏻‍♀️  
 package Nasted_clases.innerClases;
 
 public class Calculater_try 
