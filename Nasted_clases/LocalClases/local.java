@@ -36,5 +36,6 @@ public class local
 }
 //todo yani görüldüğü gibi local sınıfın içindeki private metodlarada özelliklerede rahtlıkla ulaşabiliyoruz. Zaten aynı metodun içindeyiz
 //todo ama dışarıdan öldür ulaşılamaz
+//todo hoacm birde bu oluşan nesne metod çalışken oluşturulur sonra yok olur.
 
 //mainde ve farklı classlarda metodlarda deneyelim.
