@@ -11,6 +11,7 @@ public class Calculater
     {
         public int sum(int a, int b)
         {
+            print();
             return a+b;
         }
         public int sum(int a, int b, int c)//arada overload'da attik :))
@@ -27,16 +28,22 @@ public class Calculater
     }
     public class Area
     {
+        double result;
         public double circle(int r)
         {
-            return pi*r*r;
+            double result =pi*r*r;
+            return result;
         }
         public int rectangle(int a, int b)
         {
             return a*b;
         }
     }
-
+    public void try_()
+    {
+        Area a=new Area();
+        System.out.println(a.result);
+    }
 
 }
 
