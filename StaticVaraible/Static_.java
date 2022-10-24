@@ -8,8 +8,8 @@ public class Static_
     private int id;
     private String name;
     private int salary;
-    static String company_name="Simurg";
-
+    static String company_name="Simurg";//bunu consructerın içerisinde atmammamızın sebebi zaten bir sefer atanınca herkes için aynı oluyor
+                                        //her constructer çalıştığında tekrar tekrar oraya uğrayıp atamnın bir manası yok.
     Static_(int id, String name, int salary)
     {
         this.id=id;
