@@ -1,6 +1,6 @@
 package Nasted_clases.AnanomysClases;
 
-public class Gree_test 
+public class Greet_test 
 {
     public static void main(String[] Soylu)
     {
