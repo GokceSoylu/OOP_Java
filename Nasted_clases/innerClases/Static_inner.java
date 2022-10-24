@@ -8,17 +8,27 @@ public class Static_inner
     {
         System.out.println("dis sinif a= "+a);
     }
+    public static void print2()
+    {
+        System.out.println("static yazdirma dis sinıi metodu");
+    }
     static class Inner
     {
         int a;
         void print()
         {
             System.out.println("ic sinif a = "+a+" c = "+c);
+            System.out.println();
+            
+        }
+        public void print22()
+        {
+            print2();
         }
     }
 }
-//bir sınıf düşünelim içine static bir iç sınıf yapıcaz
-//sttaic olunca bu tek defa üretilecek ilginç değil mi
-//inner olmayan static sınıf var mıdır racaba? -->yoktur
-//static class nonstatic dis sinif ozelliğine ulaşamıyor ama static olan diş sınıf üzelliiğine ulaşabilir mi?;
-//static inner class ın özelliği dış sınıfa bağımlı olmadan ulaşılabilmesi
+//zaten iç içe sınıfın özelliklerini biliyoruz yazıldığı scab içerisinde geçerlidir sınıfın içinde bir sınıf yazmışsak dış sınıfın özellik ve 
+//metdolarına dış sınıfın sınıf scobu içerisinde ulaşabilir yine dış sınıfta sanki private ozelliği buna sadece sınıf içeridsindeyken ulaşabilir
+//karşılıklı olarak nesnelerinin birbirlerinin metod ve ozelliklerine ulaşma imkanı yoktur.(sınıf scobu dışındakş nesneler)
+//static ise bize bir kural daha koyuyor sınıf içerisinde dahi olsa sadece static metdo ve özelliklere ulaşabiliyor.
+//arı yönü ise dış sınıfa bağımlı olmadan kullanılıyor. static keyword'ün özelliiği bu değil miydi

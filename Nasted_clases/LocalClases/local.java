@@ -1,5 +1,5 @@
 package Nasted_clases.LocalClases;
-//şimdi local class'da bir nasted class(iç içe sinif) örneğidir. Local class bir metodun içerisine yazılır. sadece bu tarafından ulaşaıllabilir
+//şimdi local class'da bir nasted class(iç içe sinif) örneğidir. Local class bir metodun içerisine yazılır. sadece bu metdo tarafından ulaşaıllabilir
 //olur Başka hiç bir yerden hiç bir şeklde erişilemez. bu yüzden başına public static gibi ifadeler yazılmaz. 
 public class local 
 {
@@ -36,6 +36,4 @@ public class local
 }
 //todo yani görüldüğü gibi local sınıfın içindeki private metodlarada özelliklerede rahtlıkla ulaşabiliyoruz. Zaten aynı metodun içindeyiz
 //todo ama dışarıdan öldür ulaşılamaz
-//todo hoacm birde bu oluşan nesne metod çalışken oluşturulur sonra yok olur.
-
-//mainde ve farklı classlarda metodlarda deneyelim.
+//todo hocam birde bu oluşan nesne metod çalışken oluşturulur sonra yok olur.
