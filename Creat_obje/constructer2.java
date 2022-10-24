@@ -1,3 +1,4 @@
+package Creat_obje;
 public class constructer2 
 {
     public static void main(String[] Soylu)

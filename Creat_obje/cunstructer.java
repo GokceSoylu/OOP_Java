@@ -1,3 +1,4 @@
+package Creat_obje;
 public class cunstructer 
 {
     public static void main(String[] Soylu)
