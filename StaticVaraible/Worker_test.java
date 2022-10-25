@@ -1,10 +1,10 @@
 package StaticVaraible;
-
 public class Worker_test 
 {
     public static void  main(String[] Soylu)
     {
-        Worker w1=new Worker(23,"hasan",12000), w2=new Worker(27,"firuze",24000);
+        Worker w1=new Worker(23,"hasan",12000);
+        Worker w2=new Worker(27,"firuze",24000);
         w1.get_info();
         w2.get_info();
 

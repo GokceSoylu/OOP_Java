@@ -6,13 +6,15 @@ public class Worker
     String name;
     private int salary;
     private static String company_name="Simurg";
-    private static int pasword=1234;
+    private static int pasword_company=1234;
+    private int pasword_own;
 
     public Worker(int age, String name, int salary)
     {
         this.age=age;
         this.salary=salary;
         this.name=name;
+        set_pasword();
     }
     public void get_info()
     {
@@ -23,12 +25,12 @@ public class Worker
         Scanner in=new Scanner(System.in);
         System.out.println("please enter the pasword ");
         int pasword=in.nextInt();
-        if(pasword==Worker.pasword)
+        if(pasword==Worker.pasword_company)
         {
-            System.out.println("are you sure to change the name");
-            String answer=in.next();
-            if(answer=="yes")
-                company_name=name;
+            System.out.println("are you sure to change the name yes 1, no 2");
+            int answer=in.nextInt();
+            if(answer==1)
+                Worker.company_name=company_name;
             else
                 System.out.println("process was stopped");
         }
@@ -42,7 +44,7 @@ public class Worker
         Scanner in=new Scanner(System.in);
         System.out.println("please enter the pasword ");
         int pasword=in.nextInt();
-        if(pasword!=Worker.pasword)
+        if(pasword!=this.pasword_own)
             throw new IllegalArgumentException("wrong pasword");
         else
         {
@@ -53,5 +55,11 @@ public class Worker
             if(control==1)
                 this.salary=salary;
         }
+    }
+    private void set_pasword()
+    {
+        System.out.println("please enter your own pasword ");
+        Scanner in=new Scanner(System.in);
+        pasword_own=in.nextInt();
     }
 }
