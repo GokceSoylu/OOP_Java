@@ -1,4 +1,4 @@
-package Try_catch3;
+package Try_catch;
 /* 
 public class try_catch 
 {

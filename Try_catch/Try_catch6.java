@@ -1,4 +1,4 @@
-package Try_catch3;
+package Try_catch;
 
 import java.util.*;
 public class Try_catch6 

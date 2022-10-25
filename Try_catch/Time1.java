@@ -1,4 +1,4 @@
-package Try_catch3;
+package Try_catch;
 public class Time1
 {
     private int hour, minute, second;

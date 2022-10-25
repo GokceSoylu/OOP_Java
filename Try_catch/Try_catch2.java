@@ -1,4 +1,4 @@
-package Try_catch3;
+package Try_catch;
 public class Try_catch2 
 {
     public static void main(String [] Soylu)
