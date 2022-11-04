@@ -16,6 +16,4 @@ public class Private_constructer
             this.data=data;
         }
     }
-    
-
 }
