@@ -1,6 +1,6 @@
 package Enum;
 
-public class example_try 
+public class Branch_try 
 {
     public static void main(String[] Soylu)
     {
