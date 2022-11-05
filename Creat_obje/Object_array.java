@@ -4,12 +4,12 @@ public class Object_array
 {
     public static void main(String[] Soylu)
     {
-        Person[] p;
-        Person pp[];
-        p=new Person[2];
-        pp=new Person[2];
-        p[0]=new Person(12,"hasan");
-        p[1]=new Person(15,"tomris");
+        Person[] p;//? bu henüz bir obje dizisi değil. Obje dizisi refaransı
+        Person pp[];//todo refarans tutatn refarans gibi
+        p=new Person[2];//? burada obje dizisi oluşturduk ve adresini refaransa atadık.
+        pp=new Person[2];//todo artık refaransımız bir obje dizisiin adresini tutuyor
+        p[0]=new Person(12,"hasan");//? şimdi ise dizinin içerisine yeni obje oluşturup atatdık
+        p[1]=new Person(15,"tomris");//todo bu bşr refaranstı ve biz ona yeni obje oluşturu adresini adresini atadık
         pp[0]=p[0];
         pp[1]=p[1];
 
