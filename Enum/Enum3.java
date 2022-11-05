@@ -1,3 +1,4 @@
+package Enum;
 public class Enum3 
 {
     enum Lectures

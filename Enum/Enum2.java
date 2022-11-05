@@ -1,3 +1,4 @@
+package Enum;
 public class Enum2 
 {
     enum Colour
