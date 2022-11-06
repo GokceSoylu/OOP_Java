@@ -1,4 +1,5 @@
-package Creat_obje;
+package This;
+//? Nedir yahu bu this? this objenin refaransı döndürür
 public class This_constructer
 {
     public static void main(String[] Soylu)
@@ -12,8 +13,8 @@ class Student
     int number;
     String name, sur_name, nick_name;
     Student(int number, String name, String sur_name)
-    {
-        this.number=number;
+    {                       //? this çalıştıran bulunulan objenin refaransını döndürür demiştik
+        this.number=number;//? mesala burada objenin refaransı.number diyoruz. normalde maind de aynısını yapıyoruz zaten.
         this.sur_name=name;
         this.name=name;
     }
