@@ -1,5 +1,5 @@
 package Creat_obje;
-public class constructer2 
+public class This_constructer
 {
     public static void main(String[] Soylu)
     {
@@ -49,7 +49,7 @@ class Kedi
     Kedi(String name)
     {
         this.name=name;
-        System.out.println("yeni kedinin adi  "+name);
+        System.out.println("yeni kedinin adi  "+name);// kurucu yapmasını istediğimiz bir işi yapıyorsa. bu işlemi yapması için başka kurucun içindede this() çalıştırırız
     }
 }
 /*
