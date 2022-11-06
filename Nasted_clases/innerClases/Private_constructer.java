@@ -15,7 +15,7 @@ class Patient
     private String name, story;
     private int age;
     private double diabet, vitaminD, hgb;
-    Patient(String name, int age, double diabet, double vitaminD, double hgb)
+    Patient(String name, int age, double hgb, double vitaminD, double diabet)
     {   
         this.name=name;
         this.age=age;
@@ -23,7 +23,7 @@ class Patient
         this.hgb=hgb;
         this.vitaminD=vitaminD;
     }
-    Patient(String name, int age, Double vitaminD, Double hgb)
+    Patient(String name, int age, Double hgb, Double vitaminD)
     {
         this(name,age,-1,vitaminD, hgb);
     }
@@ -42,6 +42,8 @@ class Patient
     public void analyses()
     {
         Analyses analys=new Analyses();
+        System.out.println();
+        System.out.println(name);
         System.out.println("out of refarance values ");
         analys.get_result();
     }
@@ -50,23 +52,23 @@ class Patient
     {
         private void get_result()
         {
-            if(!diabet_result()) System.out.println("diabet "+diabet);
+            if(!diabet_result())System.out.print("diabet "+diabet);
             if(!vitaminD_result())System.out.println("vitamin D "+vitaminD);
             if(!hgb_result())System.out.println("hgb "+hgb);
         }
         private boolean diabet_result()
         {
-            if(diabet<=120 && diabet>=90 && diabet!=-1) return true;
+            if((diabet<=120 && diabet>=90 )|| diabet==-1.0) return true;
             else return false;
         }
         private boolean vitaminD_result()
         {
-            if(vitaminD >= 50 && vitaminD!=-1) return true;
+            if(vitaminD >= 50 || vitaminD==-1.0) return true;
             else return false;
         }
         private boolean hgb_result()
         {
-            if(hgb>=14 && hgb<=18 && hgb!=-1) return true;
+            if((hgb>=14 && hgb<=18) || hgb==-1.0) return true;
             else return false;
         }
     }
