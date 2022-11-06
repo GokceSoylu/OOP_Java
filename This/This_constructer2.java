@@ -17,10 +17,10 @@ public class This_constructer2
             each.get_circle();
     }
 }
-class Rectangle//dikdortgen öreneği sizce nereden aldık bu öreneği😅
+class Rectangle//dikdortgen öreneği. Sizce nereden aldık bu örneği😅
 {
     private int x, y, width, height;
-    Rectangle(int x, int y, int width, int heght)
+    Rectangle(int x, int y, int width, int height)
     {
         this.x=x;
         this.y=y;
