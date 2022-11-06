@@ -10,6 +10,7 @@ public class first
     {
         Student s=new Student("hasan",45);
         System.out.println(s);//işte bir nevi get_info() metodunun kolylaştırılmış hali.
+        System.out.println(s.toString());//gördüğmüz gibi iki kullanım arasında bir fark yok
     }
 }
 class Student
