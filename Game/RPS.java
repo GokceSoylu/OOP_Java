@@ -1,6 +1,7 @@
+//todo taş kağıt makas :))
 package Game;
 import java.util.*;
-//todo taş kağıt makas :))
+
 public class RPS 
 {
     public static void main(String[] Soylu)
