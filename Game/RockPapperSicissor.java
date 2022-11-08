@@ -2,7 +2,7 @@
 package Game;
 import java.util.*;
 
-public class RPS 
+public class RockPapperSicissor 
 {
     public static void main(String[] Soylu)
     {

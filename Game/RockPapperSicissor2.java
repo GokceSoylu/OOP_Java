@@ -5,10 +5,11 @@ public class RPS2
 {
     public static void main(String[] Soylu)
     {
-        Gamer edison=new Gamer("Edison"), tesla=new Gamer("Tesla");
+        Gamer edison=new Gamer("Edison");
+        Gamer tesla=new Gamer("Tesla");
         Arena game=new Arena();
-       // game.addGamers();
-        game.startGame(edison, tesla);
+        game.addGamers(edison, tesla);
+        game.startGame();
     }
 }
 class Gamer
@@ -27,7 +28,7 @@ class Gamer
         Scanner in=new Scanner(System.in);
         System.out.printf("%n%s hamle   ",this.name);
         char choise=in.nextLine().charAt(0);
-        switch(choise)
+        switch(this.choise)
         {
             case 'r':
                 h=HandSign.ROCK;
@@ -72,20 +73,22 @@ class Gamer
 class Arena
 {
     int t;
-    void addGamers()
+    Gamer g1, g2;
+    void addGamers(Gamer gamer1, Gamer gamer2)
     {
         System.out.printf("%ndeneme hakki = ");
         Scanner in=new Scanner(System.in);
-        t=in.nextInt();
-        
+        this.t=in.nextInt();
+        this.g1=gamer1;
+        this.g2=gamer2;
     }
-    void startGame(Gamer g1, Gamer g2)
+    void startGame()
     {
-        for(int i=0;i<4;i++)
+        while(!Gamer.isGameOver && Gamer.trail<this.t)
         {
             g1.move();
             g2.move();
-            Gamer.processMove(g1, g2);
+            Gamer.processMove(this.g1, this.g2);
         }
     }
 }
