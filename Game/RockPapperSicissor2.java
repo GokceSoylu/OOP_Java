@@ -1,6 +1,6 @@
 //todo taş kağıt makas yeni yöntemle tekar yazıyoruz :)
 package Game;
-import java.util.*;
+import java.util.Scanner;
 public class RPS2 
 {
     public static void main(String[] Soylu)
@@ -12,7 +12,7 @@ public class RPS2
         game.startGame();
     }
 }
-class Gamer
+class Gamer_
 {
     static int draw=0, trail=0;
     static boolean isGameOver=false;
@@ -70,7 +70,7 @@ class Gamer
         System.out.println("esitlik = ",Gamer.draw+"  deneme = ",Gamer.trail);
     }
 }
-class Arena
+class Arena_
 {
     int t;
     Gamer g1, g2;
@@ -91,10 +91,4 @@ class Arena
             Gamer.processMove(this.g1, this.g2);
         }
     }
-}
-enum HandSign
-{
-    ROCK,
-    SICİSSOR,
-    PAPPER;
 }
