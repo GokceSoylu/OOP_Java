@@ -1,4 +1,5 @@
-package Game;
+
+
 import java.util.Scanner;
 
 public class RockPapperSicissor3 
@@ -7,8 +8,7 @@ public class RockPapperSicissor3
     {
         Gamer g1=new Gamer("Edison");
         Gamer g2=new Gamer("tesla");
-        Arena arena=new Arena();
-        arena.addGamers(g1,g2);
+        Arena arena=new Arena(g1,g2);
         arena.startGame();
     }
 }
@@ -16,7 +16,7 @@ class Arena
 {
     Gamer gamer1, gamer2;
     static boolean isGameOver;
-    void addGamers(Gamer g1, Gamer g2)
+    Arena(Gamer g1, Gamer g2)
     {
         this.gamer1=g1;
         this.gamer2=g2;
@@ -25,11 +25,27 @@ class Arena
     {
         while(!isGameOver)
         {
-            gamer1.move();
-            gamer2.move();
-            StatMaker.processMoves(gamer1, gamer2);
-            StatMaker.disPlayScor(gamer1, gamer2);
+            this.gamer1.move();
+            this.gamer2.move();
+            processMoves(gamer1, gamer2);
+            disPlayScor(gamer1, gamer2);
         }
+    }
+    static void processMoves(Gamer g1, Gamer g2)
+    {
+        if(g1.sign==null || g2.sign==null || Arena.isGameOver) return;
+        else if(g1.sign==g2.sign) Gamer.draw++;
+        else if(g1.sign==HandSign.PAPPER && g2.sign==HandSign.ROCK) g1.win++;
+        else if(g1.sign==HandSign.SICİSSOR && g2.sign==HandSign.PAPPER) g1.win++;
+        else if(g1.sign==HandSign.ROCK && g2.sign==HandSign.SICİSSOR) g1.win++;
+        else g2.win++;
+        Gamer.trail++;
+    }
+    static void disPlayScor(Gamer g1, Gamer g2)
+    {
+        System.out.println(g1.name+" "+g2.win);
+        System.out.println(g2.name+" "+g2.win);
+        System.out.println("trail "+Gamer.trail);
     }
 }
 class Gamer
@@ -51,6 +67,9 @@ class Gamer
             char c=in.nextLine().charAt(0);
             switch(c)
             {
+                case 'q':
+                    Arena.isGameOver=true;
+                    break;
                 case 'r':
                     sign=HandSign.ROCK;
                     break;
@@ -69,22 +88,9 @@ class Gamer
     }
     
 }
-class StatMaker
+enum HandSign 
 {
-    static void processMoves(Gamer g1, Gamer g2)
-    {
-        if(g1.sign==null || g2.sign==null || Arena.isGameOver) return;
-        else if(g1.sign==g2.sign) Gamer.draw++;
-        else if(g1.sign==HandSign.PAPPER && g2.sign==HandSign.ROCK) g1.win++;
-        else if(g1.sign==HandSign.SICİSSOR && g2.sign==HandSign.PAPPER) g1.win++;
-        else if(g1.sign==HandSign.ROCK && g2.sign==HandSign.SICİSSOR) g1.win++;
-        else g2.win++;
-        Gamer.trail++;
-    }
-    static void disPlayScor(Gamer g1, Gamer g2)
-    {
-        System.out.println(g1.name+" "+g2.win);
-        System.out.println(g2.name+" "+g2.win);
-        System.out.println("trail "+Gamer.trail);
-    }
+    ROCK,
+    SICİSSOR,
+    PAPPER;
 }

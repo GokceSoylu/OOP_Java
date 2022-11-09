@@ -1,18 +1,17 @@
 //todo taş kağıt makas yeni yöntemle tekar yazıyoruz :)
-package Game;
+package game2;
 import java.util.Scanner;
-public class RPS2 
+public class RockPapperSicissor2 
 {
     public static void main(String[] Soylu)
     {
         Gamer edison=new Gamer("Edison");
         Gamer tesla=new Gamer("Tesla");
-        Arena game=new Arena();
-        game.addGamers(edison, tesla);
+        Arena game=new Arena(edison, tesla);
         game.startGame();
     }
 }
-class Gamer_
+class Gamer
 {
     static int draw=0, trail=0;
     static boolean isGameOver=false;
@@ -30,6 +29,9 @@ class Gamer_
         char choise=in.nextLine().charAt(0);
         switch(this.choise)
         {
+            case 'q':
+                Arena.isGameOver=true;
+                break;
             case 'r':
                 h=HandSign.ROCK;
                 break;
@@ -70,11 +72,11 @@ class Gamer_
         System.out.println("esitlik = ",Gamer.draw+"  deneme = ",Gamer.trail);
     }
 }
-class Arena_
+class Arena
 {
     int t;
     Gamer g1, g2;
-    void addGamers(Gamer gamer1, Gamer gamer2)
+    Arena(Gamer gamer1, Gamer gamer2)
     {
         System.out.printf("%ndeneme hakki = ");
         Scanner in=new Scanner(System.in);
@@ -89,6 +91,13 @@ class Arena_
             g1.move();
             g2.move();
             Gamer.processMove(this.g1, this.g2);
+            t++;
         }
     }
+}
+enum HandSign 
+{
+    ROCK,
+    SICİSSOR,
+    PAPPER;
 }
