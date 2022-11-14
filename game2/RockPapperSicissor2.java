@@ -1,4 +1,5 @@
 //todo taş kağıt makas yeni yöntemle tekar yazıyoruz :)
+//work :))
 package game2;
 import java.util.Scanner;
 public class RockPapperSicissor2 
@@ -24,13 +25,15 @@ class Gamer
     }
     public void move()
     {
+        System.out.println("in the move");
         Scanner in=new Scanner(System.in);
+        System.out.println("after scanner");
         System.out.printf("%n%s hamle   ",this.name);
         char choise=in.nextLine().charAt(0);
-        switch(this.choise)
+        switch(choise)
         {
             case 'q':
-                Arena.isGameOver=true;
+                Gamer.isGameOver=true;
                 break;
             case 'r':
                 h=HandSign.ROCK;
@@ -78,16 +81,24 @@ class Arena
     Gamer g1, g2;
     Arena(Gamer gamer1, Gamer gamer2)
     {
-        System.out.printf("%ndeneme hakki = ");
+        
         Scanner in=new Scanner(System.in);
+        System.out.printf("%ndeneme hakki = ");
         this.t=in.nextInt();
+        System.out.println(" took the number");
         this.g1=gamer1;
+        System.out.println("g1 okay");
         this.g2=gamer2;
+        System.out.println("g2 okay");
     }
     void startGame()
     {
+        System.out.println("we started the game");
+        System.out.println(Gamer.isGameOver);
+        System.out.println(t);
         while(!Gamer.isGameOver && Gamer.trail<this.t)
         {
+            System.out.println("in while");
             g1.move();
             g2.move();
             Gamer.processMove(this.g1, this.g2);

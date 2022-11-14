@@ -1,7 +1,7 @@
 
 
 import java.util.Scanner;
-
+//! bug after wronng choise
 public class RockPapperSicissor3 
 {
     public static void main(String[] Soylu)
