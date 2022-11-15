@@ -1,7 +1,5 @@
-
-
+// hocanın yazdığı q girene kadar oyun devam der her elden sonra skorlar yazdırılır
 import java.util.Scanner;
-//! bug after wronng choise
 public class RockPapperSicissor3 
 {
     public static void main(String[] Soylu)
@@ -43,7 +41,7 @@ class Arena
     }
     static void disPlayScor(Gamer g1, Gamer g2)
     {
-        System.out.println(g1.name+" "+g2.win);
+        System.out.println(g1.name+" "+g1.win);
         System.out.println(g2.name+" "+g2.win);
         System.out.println("trail "+Gamer.trail);
     }
@@ -62,8 +60,9 @@ class Gamer
     }
     void move()
     {
-        System.out.println(this.name+"enter  ");
         do{
+            isInputValid=false;
+            System.out.println("enter  "+this.name+" ");
             char c=in.nextLine().charAt(0);
             switch(c)
             {
