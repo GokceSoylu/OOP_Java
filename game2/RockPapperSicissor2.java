@@ -1,5 +1,5 @@
 //todo taş kağıt makas yeni yöntemle tekar yazıyoruz :)
-//work :))
+//deneme hakkına bağlı olarak devam ediyor. saedce oyun sonunda skoru yazdırıyor. q ile de oyundan çıkılabiliyor
 package game2;
 import java.util.Scanner;
 public class RockPapperSicissor2 
@@ -25,9 +25,7 @@ class Gamer
     }
     public void move()
     {
-        System.out.println("in the move");
         Scanner in=new Scanner(System.in);
-        System.out.println("after scanner");
         System.out.printf("%n%s hamle   ",this.name);
         char choise=in.nextLine().charAt(0);
         switch(choise)
@@ -46,11 +44,40 @@ class Gamer
                 break;
             default:
                 System.out.println("wrong choise. It must be s, r or p");
+                Gamer.isGameOver=true;
+                break;
         }
     }
-    public static void processMove(Gamer g1, Gamer g2)
+    
+}
+class Arena
+{
+    int t;
+    Gamer g1, g2;
+    Arena(Gamer gamer1, Gamer gamer2)
     {
-        if(g1.h==HandSign.ROCK)
+        
+        Scanner in=new Scanner(System.in);
+        System.out.printf("%ndeneme hakki = ");
+        this.t=in.nextInt();
+        this.g1=gamer1;
+        this.g2=gamer2;
+    }
+    void startGame()
+    {
+        while(Gamer.trail<t && !Gamer.isGameOver )
+        {
+            g1.move();
+            g2.move();
+            processMove();
+            Gamer.trail++;
+        }
+        displayScors();
+    }
+    void processMove()
+    {
+        if(Gamer.isGameOver); 
+        else if(g1.h==HandSign.ROCK)
         {
             if(g2.h==HandSign.ROCK) Gamer.draw++;
             else if(g2.h==HandSign.PAPPER) g2.win++;
@@ -69,41 +96,14 @@ class Gamer
             else g1.win++;
         }
     }
-    static void diplayScors(Gamer g1, Gamer g2)
+    void displayScors()
     {
-        (g1.win>g2.win) ? System.out.printf("%s %d%n%s %d%n",g1.name,g1.win,g2.name,g2.win); : System.out.printf("%s %d%n%s %d%n",g2.name,g2.win,g1.name,g1.win);
-        System.out.println("esitlik = ",Gamer.draw+"  deneme = ",Gamer.trail);
-    }
-}
-class Arena
-{
-    int t;
-    Gamer g1, g2;
-    Arena(Gamer gamer1, Gamer gamer2)
-    {
-        
-        Scanner in=new Scanner(System.in);
-        System.out.printf("%ndeneme hakki = ");
-        this.t=in.nextInt();
-        System.out.println(" took the number");
-        this.g1=gamer1;
-        System.out.println("g1 okay");
-        this.g2=gamer2;
-        System.out.println("g2 okay");
-    }
-    void startGame()
-    {
-        System.out.println("we started the game");
-        System.out.println(Gamer.isGameOver);
-        System.out.println(t);
-        while(!Gamer.isGameOver && Gamer.trail<this.t)
-        {
-            System.out.println("in while");
-            g1.move();
-            g2.move();
-            Gamer.processMove(this.g1, this.g2);
-            t++;
-        }
+        if(g1.win>g2.win)  
+            System.out.printf("%n%s WİN!",g1.name);
+        else if(g2.win>g1.win)
+            System.out.printf("%n%s WİN!",g2.name);
+        System.out.printf("%n%s %d%n%s %d%n",g1.name,g1.win,g2.name,g2.win);
+        System.out.println("esitlik = "+Gamer.draw+"  deneme = "+Gamer.trail);
     }
 }
 enum HandSign 
