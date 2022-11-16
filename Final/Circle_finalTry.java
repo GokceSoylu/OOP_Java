@@ -1,5 +1,6 @@
 package Final;
-public class Circle_finalTry 
+public class Circle_finalTry {}
+class deneme//! hocam bu örnekle şuna da açıklık getirelim main fonksiyom-n public olmayanm main olmayan sınıfımızd d aolabilir çalışır sorun yoj :))
 {
     public static void main(String[] Soylu)
     {
