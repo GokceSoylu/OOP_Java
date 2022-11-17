@@ -1,8 +1,5 @@
 package gameLevel2;
 import java.util.*;
-//tüm ihtimaller bulunsun
-// kimle oynamk istersiniz pc-pc user-pc user-user yada oyun kaç kişilik olsun diyede sorabilir
-// belli hak girilirse onda durdururuz belli hak girilmezse bir yaaprız. iki arenanın kazananı tekrar yarişir hatta buna döngü halinde devam edriz
 public class RockSicissorPapper_2 
 {
     public static void main(String[] Soylu)
