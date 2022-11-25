@@ -3,7 +3,7 @@ package Creat_obje;
 public class Account 
 {
     private String name;  
-    private Double balance;
+    private Double balance=90.0;
     
     public Account(String name, Double balance)
     {
