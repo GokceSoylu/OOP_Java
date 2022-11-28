@@ -25,7 +25,11 @@ class Human
         this.name=name;
         this.age=age;
         this.weight=weight;
-
+        try_();
+    }
+    private void try_()
+    {
+        System.out.println("deneme");
     }
     void eat()
     {
@@ -50,3 +54,7 @@ class Engineer extends Human
         weight+=2;
     }
 }
+// özetleyelim
+//super anahtar kelimesi parent class'ı kast eder. super() ise parent calss'in constructerini çagırır.
+//private metod ve deişkenlere sadece sınıf scobu içerisindeyken ulaşılabildiği için parent taki private metoda yada değişkene türeyen sınıf ulaşamaz
+//hocam ancak burada private sınıfı kurucuda çağırdık kurucuyuda türeyen sınıfta çağırdık dolaylı yoldan ulaştık yani :))
