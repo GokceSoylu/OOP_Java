@@ -42,5 +42,8 @@ public class MainAnimal
         //üst sınıfta protoipi bulunmayan sınıfa ise artık ulaşamıyoruz işte tam bu noktada upcasting devvreye giriyor
         //ismin havalı olduğuna bakma bir şey yapmıyoruz. SAdece başına alt sınıfın adını yazıp ya sen aslında bu sınıftan diyoruz.
         //java ya yaparsın koçum yaparsın diyoruz ve üst sınıfın pointerinin tuttuğu alt sınıf objesi kendine özgü metoda ulaşıyor💃🏻
+    
+        Object o=new Animal();
+        ((Animal)o).eat();
     }
 }
