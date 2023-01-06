@@ -18,7 +18,7 @@ public class MainAnimal
         System.out.println("upcasting");
         
         //Upcasting
-        Animal upcasting=(Animal)c;
+        Animal upcasting=c;
         upcasting.eat();
         //! upcasting.meow(); Does not work
         c.meow();
