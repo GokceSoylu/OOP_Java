@@ -72,7 +72,7 @@ class Hero extends Caracter implements Attack
     }
     public void attack(Caracter other)
     {
-        other.takeDamage(5);
+        other.takeDamage(50);
         System.out.println("hero attacks "+other.barier);
     }
     void defence()
