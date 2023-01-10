@@ -1,10 +1,10 @@
 package Collection;
 import java.util.*;
-public class HashSet 
+public class Hash_Set 
 {
     public static void main(String[] Soylu)
     {
-        Collection<Integer> set=new HashSet<>();
+        HashSet<Integer> set=new HashSet<>();
         set.add(2);
         set.add(3);
         set.add(4);
