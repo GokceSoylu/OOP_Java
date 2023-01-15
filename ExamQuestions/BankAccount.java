@@ -36,10 +36,12 @@ class MainBank
         list.add(a4);
         Collections.sort(list);
         Iterator<BankAccount> itr=list.iterator();
+        BankAccount o;
         while(itr.hasNext())
         {
-            ((BankAccount) itr).balanceChange(50);
-            System.out.println(((BankAccount)itr).holderName+"  "+((BankAccount)itr).balance);
+            o=((BankAccount)itr.next());
+            o.balanceChange(50);
+            System.out.println(o.holderName+"  "+o.balance);
         }
     }
-}
+}//kısaca itr.next() obje döndürüyor ancak ulaşma için down casting yapmalıyız
