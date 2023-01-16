@@ -237,7 +237,7 @@ class NetflixMain
 
         //4
         Book b1=new Book(3,"operasyon 1915",score2, 2015,400,c1,"tarih kitabi",p5,300);
-        Book b2=new Book(4,"dönüşüm",score2,1912,100,c1,"klasik kitap",p6,200);
+        Book b2=new Book(4,"dönüşüm",score2,1912,100,c1,"klasik kitap",p7,200);
 
         //5
         User theUser=new User("Necmiye","Soylu",10,22,"N_Soylu","2023_OOP");
