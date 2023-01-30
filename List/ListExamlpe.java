@@ -1,7 +1,6 @@
 package List;
 
-import java.util.LinkedList;
-import java.util.ListIterator;
+import java.util.*;
 
 public class ListExamlpe 
 {
@@ -16,7 +15,7 @@ public class ListExamlpe
         for(String str:list)
             System.out.println(str);
         
-        ListIterator itr=list.listIterator();
+        Iterator<String> itr=list.iterator();
         while(itr.hasNext())
             System.out.println(itr.next());
         while(itr.hasPrevious())

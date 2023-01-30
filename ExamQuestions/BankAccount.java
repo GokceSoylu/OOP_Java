@@ -39,9 +39,9 @@ class MainBank
         BankAccount o;
         while(itr.hasNext())
         {
-            o=((BankAccount)itr.next());
-            o.balanceChange(50);
-            System.out.println(o.holderName+"  "+o.balance);
+            //o=((BankAccount)itr.next());
+            ((BankAccount)itr).balanceChange(50);
+            System.out.println(((BankAccount)itr).holderName+"  "+((BankAccount)itr).balance);
         }
     }
 }//kısaca itr.next() obje döndürüyor ancak ulaşma için down casting yapmalıyız
