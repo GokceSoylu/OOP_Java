@@ -15,7 +15,7 @@ public class ListExamlpe
         for(String str:list)
             System.out.println(str);
         
-        Iterator<String> itr=list.iterator();
+        ListIterator<String> itr=list.listIterator();
         while(itr.hasNext())
             System.out.println(itr.next());
         while(itr.hasPrevious())
@@ -23,3 +23,4 @@ public class ListExamlpe
         
     }    
 }
+//hasPrevious ve previous özelliklerine sahip olan ListIterator dır. 
